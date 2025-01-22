@@ -1,0 +1,210 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body & Font Styling */
+  body {
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    text-align: center;
+    background-image: url('https://t4.ftcdn.net/jpg/05/30/83/53/240_F_530835379_3aHaaYDjmNfKZIyjy30jyg5YekJAkKLQ.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Main Container */
+  .main-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Header Section */
+  header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    z-index: 10;
+    max-width: 100%;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .invitation-info {
+    color: #2f2e2b;
+  }
+  
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #ff6347;
+    margin-bottom: 0.5rem;
+  }
+  
+  .names {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    color: #ff6347;
+  }
+  
+  .wedding-date {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #555;
+  }
+  
+  .groom-photo,
+  .bride-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Countdown Section */
+  #countdown {
+    margin-top: 50px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .countdown-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #timer {
+    font-size: 3em;
+    font-weight: 100;
+    color: rgb(46, 203, 239);
+    text-shadow: 0 0 20px #48C8FF;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #timer div {
+    display: inline-block;
+    min-width: 90px;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  #timer div:hover {
+    transform: scale(1.2);
+  }
+  
+  #timer div span {
+    font-size: 0.35em;
+    font-weight: 400;
+  }
+  
+  #save-calendar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  #save-calendar:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .qr-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .groom-photo,
+    .bride-photo {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .names {
+      font-size: 2.5rem;
+    }
+  
+    .wedding-date {
+      font-size: 1.3rem;
+    }
+  
+    #timer {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .countdown-title,
+    .location-title,
+    .qr-title {
+      font-size: 1.5rem;
+    }
+  
+    #timer {
+      font-size: 1.8rem;
+    }
+  
+    .footer-text {
+      font-size: 1rem;
+    }
+  }
+  

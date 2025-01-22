@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <link rel="stylesheet" href="invitation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For icons -->
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <div class="header-content">
+        <img src="https://www.shutterstock.com/shutterstock/photos/2501600445/display_1500/stock-photo-tamil-cultural-wedding-ornament-gold-mangalyam-2501600445.jpg" alt="Groom" class="groom-photo">
+        <div class="invitation-info">
+          <h1 class="title">You're Invited!</h1>
+          <p class="names"> Sarathkumar & Kaviya </p>
+          <h1 class="wedding-date">Save the Date</h1>
+          <p class="wedding-date" id="wedding-date">Feb 03, 2025</p>
+          <p class="wedding-time">06:00 AM to 07:30 AM</p>
+
+          <br>
+
+          <!-- Google Calendar link, dynamically added date and time -->
+          <a href="#" id="save-calendar" target="_blank" class="save-date-link">
+            Save to Google Calendar
+          </a>
+        </div>
+        <img src="WhatsApp Image 2025-01-22 at 16.24.41_7ba83408.jpg" alt="Bride" class="bride-photo">
+      </div>
+    </header>
+
+    <section id="countdown">
+      <h2 class="countdown-title">Countdown to Our Big Day</h2>
+      <div id="timer" class="timer"></div>
+    </section>
+
+    <br>
+    <section id="location">
+      <h2 class="location-title">Wedding Location</h2>
+      <br>
+      <div class="location-details">
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.571253191219!2d79.32301427505277!3d11.510820088686142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab4a7814bf979d%3A0xcd52287aa4e5c554!2sSiva%20Pooja%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1737542014134!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a href="https://maps.app.goo.gl/7iksGt3Ck8YaQuwr8" target="_blank" class="map-link">View on Google Maps</a>
+      </div>
+    </section>
+
+    <br><br>
+
+    <section id="qr-code">
+      <h2 class="qr-title">Scan the QR Code</h2>
+      <img src="My_Gallery.png" alt="QR Code" class="qr-image">
+    </section>
+
+    <footer>
+      <p class="footer-text">We can't wait to celebrate with you!</p>
+      <p>© 2025 Sarathkumar</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
